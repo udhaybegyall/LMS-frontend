@@ -19,10 +19,12 @@ export function renderMemberContent(container: HTMLDivElement): void {
                     renderAvailableBooks(container);
                     break;
                 case 'borrowed-books':
-                    renderBorrowedBooks(container);
+                    // renderBorrowedBooks(container);
+                    console.log("In work");
                     break;
                 case 'history':
-                    renderBorrowHistory(container);
+                    // renderBorrowHistory(container);
+                    console.log("In work");
                     break;
             }
         });
@@ -108,12 +110,12 @@ async function borrowBook(bookId: number): Promise<void> {
     }
 }
 
-function renderBorrowedBooks(container: HTMLDivElement): void {
-    // Implement borrowed books functionality
-    console.log('Borrowed books not implemented yet');
-}
+// function renderBorrowedBooks(container: HTMLDivElement): void {
+//     // Implement borrowed books functionality
+//     console.log('Borrowed books not implemented yet');
+// }
 
-function renderBorrowHistory(container: HTMLDivElement): void {
-    // Implement borrow history functionality
-    console.log('Borrow history not implemented yet');
-}
+// function renderBorrowHistory(container: HTMLDivElement): void {
+//     // Implement borrow history functionality
+//     console.log('Borrow history not implemented yet');
+// }
